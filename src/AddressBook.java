@@ -1,10 +1,10 @@
 import java.util.*;
 
 public class AddressBook {
-    ArrayList<BuddyInfo> buddies;
+    private ArrayList<BuddyInfo> buddies;
 
     public AddressBook() {
-        this.buddies = new ArrayList<>();
+        this.buddies = new ArrayList<BuddyInfo>();
     }
 
     public void addBuddy(BuddyInfo buddy) {
@@ -16,7 +16,7 @@ public class AddressBook {
     }
 
     public static void main(String[] args) {
-        BuddyInfo buddy = new BuddyInfo("Tom", "Chungus Avenue", "1234512");
+        BuddyInfo buddy = new BuddyInfo("Bill", "Chungus Avenue", "1234512");
         AddressBook addressBook = new AddressBook();
         addressBook.addBuddy(buddy);
         addressBook.removeBuddy(buddy);
